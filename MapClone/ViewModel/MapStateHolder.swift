@@ -11,7 +11,7 @@ import MapKit
 
 final class MapStateHolder: NSObject, ObservableObject, CLLocationManagerDelegate {
     
-    @Published var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 37.5666791, longitude: 126.9782914), span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+    @Published var region = MKCoordinateRegion(center: MapDetails.startLocation, span: MapDetails.defaultSpan)
     var locationManager: CLLocationManager?
     
     func checkIfLocationServicesIsEnabled() {
@@ -37,7 +37,7 @@ final class MapStateHolder: NSObject, ObservableObject, CLLocationManagerDelegat
         case .denied:
             print("You have denied this app location permission.")
         case .authorizedAlways, .authorizedWhenInUse:
-            region = MKCoordinateRegion(center:locationManager.location!.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+            region = MKCoordinateRegion(center:locationManager.location!.coordinate, span: MapDetails.defaultSpan)
         @unknown default:
             break
         }
