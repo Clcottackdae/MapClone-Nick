@@ -12,6 +12,7 @@
 		79F4C3F3285B19B700B7E40F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F4C3F2285B19B700B7E40F /* Assets.xcassets */; };
 		79F4C3F6285B19B700B7E40F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F4C3F5285B19B700B7E40F /* Preview Assets.xcassets */; };
 		79F4C400285B1E5600B7E40F /* MapStateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4C3FF285B1E5600B7E40F /* MapStateHolder.swift */; };
+		79F4C405285B2F4900B7E40F /* MapDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4C404285B2F4900B7E40F /* MapDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		79F4C3F5285B19B700B7E40F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79F4C3FF285B1E5600B7E40F /* MapStateHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStateHolder.swift; sourceTree = "<group>"; };
 		79F4C401285B218900B7E40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		79F4C404285B2F4900B7E40F /* MapDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		79F4C3FD285B1DA200B7E40F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				79F4C404285B2F4900B7E40F /* MapDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				79F4C3F1285B19B700B7E40F /* MapView.swift in Sources */,
 				79F4C3EF285B19B700B7E40F /* MapCloneApp.swift in Sources */,
 				79F4C400285B1E5600B7E40F /* MapStateHolder.swift in Sources */,
+				79F4C405285B2F4900B7E40F /* MapDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
