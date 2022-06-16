@@ -8,6 +8,7 @@
 import SwiftUI
 import MapKit
 
+// Map 뷰 reference https://seons-dev.tistory.com/entry/SwiftUI-Map-View
 struct MapView: View {
     @ObservedObject var mapStateHolder = MapStateHolder()
     
