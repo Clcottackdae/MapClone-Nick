@@ -9,6 +9,7 @@ import Foundation
 import CoreLocation
 import MapKit
 
+// 사용자 권한 요청, 현재 위치 받아오기 reference https://www.youtube.com/watch?v=hWMkimzIQoU
 final class MapStateHolder: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     @Published var region = MKCoordinateRegion(center: MapDetails.startLocation, span: MapDetails.defaultSpan)
