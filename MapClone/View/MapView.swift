@@ -11,11 +11,10 @@ import MapKit
 struct MapView: View {
     @ObservedObject var mapStateHolder = MapStateHolder()
     
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 37.5666791, longitude: 126.9782914), span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
-    
     var body: some View {
-        Map(coordinateRegion: $region, showsUserLocation: true, userTrackingMode: .constant(.follow))
+        Map(coordinateRegion: $mapStateHolder.region, showsUserLocation: true, userTrackingMode: .constant(.follow))
             .edgesIgnoringSafeArea(.all)
+            .accentColor(Color(.systemPink))
             .onAppear {
                 mapStateHolder.checkIfLocationServicesIsEnabled()
             }
