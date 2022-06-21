@@ -9,8 +9,6 @@ import SwiftUI
 
 struct RecentItemsView: View {
     var body: some View {
-        ZStack {
-            Color.gray.edgesIgnoringSafeArea(.all)
             VStack {
                 HStack {
                     Text("최근 항목")
@@ -37,6 +35,7 @@ struct RecentItemsView: View {
                                 .foregroundColor(.gray)
                         }
                     }
+                    .padding(.vertical, 10)
                     
                     Divider()
                     
@@ -56,6 +55,7 @@ struct RecentItemsView: View {
                                 .foregroundColor(.gray)
                         }
                     }
+                    .padding(.vertical, 10)
                     
                     Divider()
                     
@@ -75,14 +75,13 @@ struct RecentItemsView: View {
                                 .foregroundColor(.gray)
                         }
                     }
+                    .padding(.vertical, 10)
                 }
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 7)
                     .foregroundColor(.white)
                 )
             }
-            .padding()
-        }
     }
 }
 

@@ -25,7 +25,6 @@ struct MyGuideView: View {
             .background(RoundedRectangle(cornerRadius: 7)
                 .foregroundColor(.white))
         }
-        .padding(15)
     }
 }
 

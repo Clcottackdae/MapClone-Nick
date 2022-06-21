@@ -9,8 +9,6 @@ import SwiftUI
 
 struct FavoriteView: View {
     var body: some View {
-        ZStack {
-            Color.gray.edgesIgnoringSafeArea(.all)
             VStack {
                 HStack {
                     Text("즐겨찾기")
@@ -92,8 +90,6 @@ struct FavoriteView: View {
                     .foregroundColor(.white)
                 )
             }
-            .padding()
-        }
     }
 }
 
