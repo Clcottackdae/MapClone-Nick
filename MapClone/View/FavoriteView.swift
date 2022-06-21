@@ -14,10 +14,12 @@ struct FavoriteView: View {
             VStack {
                 HStack {
                     Text("즐겨찾기")
+                        .foregroundColor(.gray)
                     Spacer()
-                    Text("자세히")
+                    Button(action:{}) {
+                        Text("자세히")
+                    }
                 }
-                .padding(.horizontal, 20)
                 HStack (alignment: .top) {
                     VStack {
                         Button(action: {
@@ -82,17 +84,16 @@ struct FavoriteView: View {
                                 .clipShape(Circle())
                         }
                         Text("추가")
-
+                        
                     }
                 }
-                .frame(width: 320)
                 .padding()
-                .background(RoundedRectangle(cornerRadius: 5)
+                .background(RoundedRectangle(cornerRadius: 7)
                     .foregroundColor(.white)
-                    )
+                )
             }
+            .padding()
         }
-        
     }
 }
 
