@@ -13,9 +13,17 @@ struct BottomSheetView: View {
             Capsule()
                 .fill(.gray)
                 .frame(width: 40, height: 5)
-            SearchBarView()
-                .padding(.horizontal, 20)
-                .padding(.bottom, 15)
+            HStack {
+                SearchBarView()
+                Image("profile")
+                    .resizable()
+                    .frame(width: 45, height: 45)
+                    .background(.gray)
+                    .clipShape(Circle())
+                    .padding(.leading, 5)
+            }
+            .padding(.horizontal, 20)
+            .padding(.bottom, 15)
             ScrollView {
                 LazyVStack {
                     
