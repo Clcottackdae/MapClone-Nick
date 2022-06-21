@@ -10,11 +10,15 @@ import SwiftUI
 struct BottomSheetView: View {
     var body: some View {
         VStack {
+            Capsule()
+                .fill(.gray)
+                .frame(width: 40, height: 5)
             SearchBarView()
                 .padding(.horizontal, 20)
                 .padding(.bottom, 15)
             ScrollView {
                 LazyVStack {
+                    
                     FavoriteView()
                         .padding(.bottom)
                     RecentItemsView()
