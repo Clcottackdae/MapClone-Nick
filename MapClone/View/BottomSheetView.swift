@@ -43,7 +43,7 @@ struct BottomSheetView: View {
                         }
                         .padding()
                         .background(RoundedRectangle(cornerRadius: 7)
-                            .foregroundColor(.gray))
+                            .foregroundColor(.lightGrey))
                     }
                     Button(action: {
                         
@@ -55,7 +55,7 @@ struct BottomSheetView: View {
                         }
                         .padding()
                         .background(RoundedRectangle(cornerRadius: 7)
-                            .foregroundColor(.gray))
+                            .foregroundColor(.lightGrey))
                     }
                     .padding(.bottom, 10)
                     

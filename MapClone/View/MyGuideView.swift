@@ -17,7 +17,7 @@ struct MyGuideView: View {
                     .foregroundColor(.blue)
                     .frame(width: 45, height: 45)
                     .background(RoundedRectangle(cornerRadius: 5)
-                        .foregroundColor(.gray))
+                        .foregroundColor(.lightGrey))
                 Text("새로운 가이드")
                 Spacer()
             }

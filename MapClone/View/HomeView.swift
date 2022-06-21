@@ -24,7 +24,7 @@ struct HomeView: View {
                 return AnyView (
                     ZStack{
                         Rectangle()
-                            .foregroundColor(.white)
+                            .foregroundColor(.backgroundGrey)
                             .clipShape(CustomCorner(corners: [.topLeft,.topRight], radius: 20))
                         
                         BottomSheetView()

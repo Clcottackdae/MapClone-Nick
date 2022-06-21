@@ -9,28 +9,11 @@ import SwiftUI
 
 extension Color {
     static var backgroundGrey: Color {
-        return Color(hex: "#FBFBFB")
+        return Color(hex: "#F7F7F7")
     }
     
     static var lightGrey: Color {
-        return Color(hex: "#AAAAAA")
-    }
-    
-
-    static var iconGrey: Color {
-        return Color(hex: "#8A8A8A")
-    }
-    
-    static var popupGrey: Color {
-        return Color(hex: "#8E8E8E")
-    }
-    
-    static var listGrey: Color {
-        return Color(hex: "#F2F2F7")
-    }
-        
-    static var chartGrey: Color {
-        return Color(hex: "#EFEFEF")
+        return Color(hex: "#EAEAEA")
     }
 }
 

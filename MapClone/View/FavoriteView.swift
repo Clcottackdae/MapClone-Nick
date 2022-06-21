@@ -44,7 +44,7 @@ struct FavoriteView: View {
                                 .font(.title)
                                 .frame(width: 60, height: 60)
                                 .foregroundColor(.blue)
-                                .background(.gray)
+                                .background(Color.lightGrey)
                                 .clipShape(Circle())
                         }
                         Text("직장")
@@ -78,7 +78,7 @@ struct FavoriteView: View {
                                 .font(.title)
                                 .frame(width: 60, height: 60)
                                 .foregroundColor(.blue)
-                                .background(.gray)
+                                .background(Color.lightGrey)
                                 .clipShape(Circle())
                         }
                         Text("추가")
