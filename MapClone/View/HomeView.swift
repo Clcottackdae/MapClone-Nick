@@ -26,6 +26,7 @@ struct HomeView: View {
                         Rectangle()
                             .foregroundColor(.backgroundGrey)
                             .clipShape(CustomCorner(corners: [.topLeft,.topRight], radius: 20))
+                            .edgesIgnoringSafeArea(.bottom)
                         
                         BottomSheetView()
                             .padding(.top, 10)
